@@ -26,7 +26,7 @@ STAMBP= st.number_input("Enter STAMBP level")
 
 if st.button("Submit"):
     # Unpickle classifier
-    clf = joblib.load("clfSSSIENDxgboost.pkl")
+    clf = joblib.load("clfgbm.pkl")
     # Store inputs into dataframe
     X = pd.DataFrame([[IL8,uPA,AXIN1,IL10,STAMBP]],
                      columns=["IL8", "uPA","AXIN1",
